@@ -195,30 +195,46 @@ body {
   background-color: #D3D3D3;
   color: #444444;
 }
-body h1 {
-  color: #E67644;
+body section {
+  padding: 25vh 0 0 10vh ;
+  width: 55%;
   text-align: left;
 }
-body p {
-  text-align: left;
+body section h1 {
+  color: #E67644;
+  font-size: 7rem;
+  padding: 3vh 0;
+}
+body section h2 {
+  padding: 2vh 0;
+  text-indent: initial;
+  font-size: 5rem;
+}
+body section h3 {
+  font-size: 1.7rem;
+  padding: 3vh 0;
 }
 .team {
   text-align: center;
   color: #444444;
-  padding: 2%;
+  padding: 2rem;
   font-size: 3.1rem;
 }
 .team p {
   text-align: center;
   color: #89868D;
-  padding: 5%;
+  padding: 5rem;
+}
+.team .developers {
+  text-transform: uppercase;
 }
 .team .developers ul {
   color: #E67644;
-  padding-bottom: 2%;
+  padding-bottom: 2rem;
 }
 .team .developers ul li {
-  padding: 1%;
+  text-transform: none;
+  padding: 1rem;
   font-size: 1.8rem;
 }
 @font-face {
