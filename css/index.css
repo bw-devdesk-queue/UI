@@ -142,17 +142,17 @@ body {
 h1 {
   font-size: 3.2rem;
 }
-h2 {
+h2,
+p {
   font-size: 2.8rem;
+  padding: 2%;
 }
 h3 {
   font-size: 1.6rem;
 }
 header {
-  text-align: center;
+  background: #444444;
   padding: 0 5%;
-  border-bottom: 1px solid darkgrey;
-  color: slategray;
 }
 header .navbar {
   display: flex;
@@ -163,6 +163,11 @@ header .navbar h1 {
   display: flex;
   align-items: center;
   font-size: 3.5rem;
+  text-decoration: none;
+}
+header .navbar h1 a {
+  color: #AEAEAE;
+  text-decoration: none;
 }
 header .navbar nav {
   display: flex;
@@ -170,21 +175,41 @@ header .navbar nav {
   width: 40%;
 }
 header .navbar nav #login {
-  background-color: orange;
+  background-color: #E67644;
+  color: #444444;
 }
 header .navbar nav a {
   text-decoration: none;
   margin: 2%;
   padding: 2%;
   width: 100%;
-  border: 2px solid orange;
+  border: 2px solid #E67644;
   border-radius: 5px;
   text-align: center;
   font-size: 2.5rem;
-  color: slategray;
+  color: #AEAEAE;
 }
 body {
-  background-color: lightgray;
+  background-color: #D3D3D3;
+  color: #AEAEAE;
+}
+* {
+  text-align: center;
+}
+p {
+  padding: 5%;
+}
+.team {
+  padding: 2%;
+  font-size: 4rem;
+}
+.team ul {
+  color: #E67644;
+  padding-bottom: 2%;
+}
+.team ul li {
+  padding: 1%;
+  font-size: 1.8rem;
 }
 @font-face {
   font-family: 'Overpass';
