@@ -164,6 +164,8 @@ header .navbar h1 {
   align-items: center;
   font-size: 3.5rem;
   text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
 }
 header .navbar h1 a {
   color: #AEAEAE;
@@ -172,7 +174,7 @@ header .navbar h1 a {
 header .navbar nav {
   display: flex;
   justify-content: space-evenly;
-  width: 40%;
+  width: 30%;
 }
 header .navbar nav #login {
   background-color: #E67644;
@@ -191,23 +193,31 @@ header .navbar nav a {
 }
 body {
   background-color: #D3D3D3;
-  color: #AEAEAE;
+  color: #444444;
 }
-* {
-  text-align: center;
+body h1 {
+  color: #E67644;
+  text-align: left;
 }
-p {
-  padding: 5%;
+body p {
+  text-align: left;
 }
 .team {
+  text-align: center;
+  color: #444444;
   padding: 2%;
-  font-size: 4rem;
+  font-size: 3.1rem;
 }
-.team ul {
+.team p {
+  text-align: center;
+  color: #89868D;
+  padding: 5%;
+}
+.team .developers ul {
   color: #E67644;
   padding-bottom: 2%;
 }
-.team ul li {
+.team .developers ul li {
   padding: 1%;
   font-size: 1.8rem;
 }
