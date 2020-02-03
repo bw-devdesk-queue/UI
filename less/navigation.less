@@ -16,7 +16,6 @@ header {
            
             display: flex;
             align-items: center;
-            // width: 20%;
             font-size: 3.5rem;
             text-decoration: none;
             text-transform: uppercase;
@@ -26,6 +25,9 @@ header {
                 color: @lightgray;
                 text-decoration: none;
     
+                    &:hover {
+                        color: @orange;
+                    }
             }
         }
         
@@ -37,6 +39,13 @@ header {
             #login {
                 background-color:@orange;
                 color: @darkgray;
+
+                &:hover {
+                    background-color: darken(@orange, 3%);
+                    border: 2px solid darken(@orange, 3%);
+                    color: @white;
+                    
+                }
             }
 
             a{
@@ -49,6 +58,10 @@ header {
             text-align: center;
             font-size: 2.5rem;
             color: @lightgray;
+
+            &:hover {
+                color: @white;
+            }
             }
        }
     }
