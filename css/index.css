@@ -152,7 +152,7 @@ h3 {
 }
 header {
   background: #444444;
-  padding: 0 5%;
+  padding: 0 2rem;
 }
 header .navbar {
   display: flex;
@@ -177,7 +177,7 @@ header .navbar h1 a:hover {
 header .navbar nav {
   display: flex;
   justify-content: space-evenly;
-  width: 30%;
+  width: 35rem;
 }
 header .navbar nav #login {
   background-color: #E67644;
@@ -208,23 +208,18 @@ body {
 }
 body #mainheader {
   display: flex;
-  width: 55%;
-  padding: 25vh 0 0 10vh;
+  padding: 20rem 15rem;
   text-align: left;
-  justify-content: space-between;
-  border: solid;
+  justify-content: center;
+  align-items: center;
 }
 body #mainheader #index {
   display: flex;
-  width: 55%;
+  width: 50%;
   text-align: left;
   flex-direction: column;
-  justify-content: space-between;
-  border: solid;
 }
 body #mainheader #index h1 {
-  display: flex;
-  flex-direction: column;
   color: #E67644;
   font-size: 7rem;
   padding: 3vh 0;
@@ -242,21 +237,20 @@ body #mainheader #index h2 mark {
 body #mainheader #index h3 {
   font-size: 1.7rem;
   padding: 3vh 0;
+  width: 65%;
+  text-align: justify;
 }
 body #mainheader .mock {
   display: flex;
-  width: 5%;
-  border: solid;
+  width: 60%;
   flex-direction: column;
-}
-body #mainheader .mock img {
-  width: 20%;
 }
 #about {
   text-align: center;
   color: #444444;
   padding: 2rem;
   font-size: 3.1rem;
+  padding: 10rem;
 }
 #about p {
   text-align: center;
