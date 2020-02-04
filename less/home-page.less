@@ -2,56 +2,111 @@ body {
     background-color: @white;
     color: @darkgray;
     
+    
 
     #mainheader {
         display: flex;
-        padding: 20rem 15rem;
-        text-align: left;
+        width: 90%;
+        margin: 3rem 7rem;
         justify-content: center;
         align-items: center;
-
-    #index {
-        display: flex;
-        // padding: 25vh 0 0 10vh ;
-        width: 50%;
+        height: 80vh;
+        padding: 5rem 5rem;
         text-align: left;
-        flex-direction: column;
-    
-        // flex-direction: column;
 
-        h1 {
-            color: @orange;
-            font-size: 7rem;
-            padding: 3vh 0;
+
+        @media @tablet {
+            flex-direction: column;
+            width: 100%;
+            padding: 0;
+            margin: 0;
         }
 
-        h2 {
-            padding: 2vh 0;
-            text-indent: initial;
-            font-size: 5rem;
+      
 
-           mark {
-                background: lighten(@lightgray, 8%);
-                color: @darkgray;
-                padding: .4rem;
+        #index {
+            display: flex;
+        
+            text-align: left;
+            flex-direction: column;
+            justify-content: space-around;
+
+        
+            @media @tablet {
+                width: 90%;
+                align-items: center;
+                text-align: center;
+                flex-wrap: wrap;
+            }
+    
+
+            h1 {
+                color: @orange;
+                font-size: 7rem;
+                padding: 3rem 0;
+
+                @media @tablet {
+                    font-size: 5rem;
+            
+                }
+
+                @media @phone {
+                    font-size: 4rem;
+            
+                }
+                
+            }
+
+            h2 {
+                padding: 2rem 0;
+                font-size: 5rem;
+
+                @media @tablet {
+                    font-size: 4rem;
+                }
+
+                @media @phone {
+                    font-size: 3rem;
+            
+                }
+
+            mark {
+                    background: lighten(@lightgray, 8%);
+                    color: @darkgray;
+                    padding: .4rem;
+                }
+            }
+
+            p {
+                font-size: 1.7rem;
+                padding: 1rem 0;
+                width: 65%;
+                text-align: justify;
+
+                @media @tablet {
+                    text-align: center;
+                    justify-content: center;
+                    width: 80%;
+                    padding: .5rem;
+                }
+            }  
+
+        }
+
+        #mock {
+            display: flex;
+
+            justify-content: space-around;
+
+
+            @media @tablet {
+                align-items: center;
+                width: 100%;
+                padding: 5rem;
+                img {
+                    width: 40%;
+                }
             }
         }
-
-        h3 {
-            font-size: 1.7rem;
-            padding: 3vh 0;
-            width: 65%;
-            text-align: justify;
-        }  
-
-    }
-
-    .mock {
-        display: flex;
-        width: 60%;
-        flex-direction: column;
-        
     }
 }
-}
-
