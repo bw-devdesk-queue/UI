@@ -129,16 +129,12 @@ table {
 * {
   box-sizing: border-box;
 }
-html {
-  font-size: 62.5%;
-}
-body {
-  background: lightgray;
-}
 html,
 body {
   font-family: 'Overpass', sans-serif;
+  font-size: 62.5%;
   color: #D3D3D3;
+  background: #D3D3D3;
 }
 h1 {
   font-size: 3.2rem;
@@ -373,17 +369,38 @@ body #mainheader #mock {
   color: #89868D;
   padding: 5rem;
 }
-#about .developers {
+#about h2 {
+  text-align: center;
+  align-items: center;
+  color: orange;
   text-transform: uppercase;
 }
-#about .developers ul {
-  color: orange;
-  padding-bottom: 2rem;
+#about .developers {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  border: solid red;
 }
-#about .developers ul li {
-  text-transform: none;
-  padding: 1rem;
-  font-size: 1.8rem;
+#about .developers .team {
+  display: flex;
+  width: 15%;
+  border: solid;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+#about .developers .team .dev {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 20%;
+  border: 3px solid yellow;
+}
+#about .developers .team .dev img {
+  width: 200px;
+  border-radius: 100px;
 }
 @font-face {
   font-family: 'Overpass';
