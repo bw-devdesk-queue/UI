@@ -198,7 +198,7 @@ header .navbar h1 a {
   }
 }
 header .navbar h1 a:hover {
-  color: #E67644;
+  color: orange;
 }
 header .navbar nav {
   display: flex;
@@ -214,12 +214,12 @@ header .navbar nav {
   }
 }
 header .navbar nav #login {
-  background-color: #E67644;
+  background-color: orange;
   color: #444444;
 }
 header .navbar nav #login:hover {
-  background-color: #e46c37;
-  border: 2px solid #e46c37;
+  background-color: #f09b00;
+  border: 2px solid #f09b00;
   color: #D3D3D3;
 }
 header .navbar nav a {
@@ -227,7 +227,7 @@ header .navbar nav a {
   margin: 2rem;
   padding: 1rem;
   width: 90rem;
-  border: 2px solid #E67644;
+  border: 2px solid orange;
   border-radius: 5px;
   text-align: center;
   font-size: 2.5rem;
@@ -265,7 +265,7 @@ body #mainheader {
   body #mainheader {
     flex-direction: column;
     width: 100%;
-    padding: 0;
+    padding: 15rem;
     margin: 0;
   }
 }
@@ -284,7 +284,7 @@ body #mainheader #index {
   }
 }
 body #mainheader #index h1 {
-  color: #E67644;
+  color: orange;
   font-size: 7rem;
   padding: 3rem 0;
 }
@@ -372,7 +372,7 @@ body #mainheader #mock {
   text-transform: uppercase;
 }
 #about .developers ul {
-  color: #E67644;
+  color: orange;
   padding-bottom: 2rem;
 }
 #about .developers ul li {
