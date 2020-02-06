@@ -22,58 +22,65 @@
 
     h2 {
         text-align: center;
-        align-items: center;
-        color: @orange;
+        color: @darkgray;
         text-transform: uppercase;
+        width: 100%;
+        background-color: lighten(@lightgray, 10%);
     }
     
-    .developers {
+    .team {
         display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
         text-align: center;
-        align-items: center;
-        justify-content: space-evenly;
         width: 100%;
-        border: solid red;
     
 
-
-        // text-transform: uppercase;
-        //     ul {
-        //         color: @orange;
-        //         padding-bottom: 2rem;
-        .team {
+        .developers {
             display: flex;
-            width: 15%;
-            border: solid;
-            flex-direction: column;
-            flex-wrap: wrap;
-            padding: 2rem;
+            width: 100%;
+            justify-content: space-around;
             
 
             .dev {
                 display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-                width: 20%;
-                border: 3px solid yellow;
+                flex-direction: column;
+                width: 40%;
+                justify-content: space-evenly;
+                align-items: center;
+                padding: 2rem;
             
                 img {
-                width: 200px;
-                border-radius: 100px;
+                    flex-wrap:wrap;
+                    flex-direction: row;
+                    margin: 3rem;
+                    width: 200px;
+                    border-radius: 100px;
+            }
 
+            h3 {
+                font-size: 3rem;
+            }
+
+            a {
+                // display: flex;
+                // flex-direction: row;
+                // flex-wrap: wrap;
+                width: 100%;
+                text-decoration: none;
+                color: @gray;
+                font-size: 2rem;
+                padding: 1rem;
+
+                i {
+                    font-size: 2.6rem;
+                    color: @orange;
+                }
             }
          }
     }
-        //         li {
-        //             text-transform: none;
-        //             padding: 1rem;
-        //             font-size: 1.8rem; 
-        //         }
 
-        //         a{
-        //             color: @darkgray;
-        //         }
-        //     }
     }
 
 }
