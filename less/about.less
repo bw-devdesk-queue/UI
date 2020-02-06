@@ -28,19 +28,30 @@
         background-color: lighten(@lightgray, 10%);
     }
     
-    .team {
+    .container {
         display: flex;
         justify-content: center;
         align-content: center;
         flex-wrap: wrap;
         text-align: center;
         width: 100%;
+
+        @media @tablet {
+            flex-direction: row;
+        }
     
 
-        .developers {
+        .team {
             display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
             width: 100%;
-            justify-content: space-around;
+            justify-content: space-evenly;
+
+            @media @tablet {
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
             
 
             .dev {
@@ -50,37 +61,54 @@
                 justify-content: space-evenly;
                 align-items: center;
                 padding: 2rem;
+
+                @media @tablet {
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    width: 100%;
+                    padding: .5rem;
+                    align-content: center;
+                }
             
                 img {
                     flex-wrap:wrap;
-                    flex-direction: row;
+                    flex-direction: column;
                     margin: 3rem;
                     width: 200px;
                     border-radius: 100px;
-            }
+                    align-content: left;
 
-            h3 {
+                    @media @tablet {
+                        width: 100px;
+                        margin: .5rem;
+
+                    }
+                }
+
+            h3{
                 font-size: 3rem;
+                align-content: left;
             }
 
             a {
-                // display: flex;
-                // flex-direction: row;
-                // flex-wrap: wrap;
-                width: 100%;
+                width: 90%;
                 text-decoration: none;
                 color: @gray;
                 font-size: 2rem;
                 padding: 1rem;
 
+                @media @tablet {
+                    padding: 0;
+                    width: 100%;
+                    align-content: right;
+                }
+
                 i {
-                    font-size: 2.6rem;
+                    font-size: 2rem;
                     color: @orange;
                 }
             }
          }
     }
-
     }
-
 }

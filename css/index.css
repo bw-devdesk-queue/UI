@@ -376,7 +376,7 @@ body #mainheader #mock {
   width: 100%;
   background-color: #c8c8c8;
 }
-#about .team {
+#about .container {
   display: flex;
   justify-content: center;
   align-content: center;
@@ -384,12 +384,25 @@ body #mainheader #mock {
   text-align: center;
   width: 100%;
 }
-#about .team .developers {
-  display: flex;
-  width: 100%;
-  justify-content: space-around;
+@media (max-width: 750px) {
+  #about .container {
+    flex-direction: row;
+  }
 }
-#about .team .developers .dev {
+#about .container .team {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-evenly;
+}
+@media (max-width: 750px) {
+  #about .container .team {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+#about .container .team .dev {
   display: flex;
   flex-direction: column;
   width: 40%;
@@ -397,25 +410,49 @@ body #mainheader #mock {
   align-items: center;
   padding: 2rem;
 }
-#about .team .developers .dev img {
+@media (max-width: 750px) {
+  #about .container .team .dev {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0.5rem;
+    align-content: center;
+  }
+}
+#about .container .team .dev img {
   flex-wrap: wrap;
-  flex-direction: row;
+  flex-direction: column;
   margin: 3rem;
   width: 200px;
   border-radius: 100px;
+  align-content: left;
 }
-#about .team .developers .dev h3 {
+@media (max-width: 750px) {
+  #about .container .team .dev img {
+    width: 100px;
+    margin: 0.5rem;
+  }
+}
+#about .container .team .dev h3 {
   font-size: 3rem;
+  align-content: left;
 }
-#about .team .developers .dev a {
-  width: 100%;
+#about .container .team .dev a {
+  width: 90%;
   text-decoration: none;
   color: #89868D;
   font-size: 2rem;
   padding: 1rem;
 }
-#about .team .developers .dev a i {
-  font-size: 2.6rem;
+@media (max-width: 750px) {
+  #about .container .team .dev a {
+    padding: 0;
+    width: 100%;
+    align-content: right;
+  }
+}
+#about .container .team .dev a i {
+  font-size: 2rem;
   color: orange;
 }
 @font-face {
