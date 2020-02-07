@@ -153,13 +153,14 @@ header {
 }
 .navbar {
   display: flex;
-  width: 90%;
-  justify-content: space-around;
+  width: 100%;
   align-items: center;
+  justify-content: space-around;
 }
 @media (max-width: 800px) {
   .navbar {
     flex-wrap: wrap;
+    padding: 2rem;
   }
 }
 @media (max-width: 500px) {
@@ -170,6 +171,8 @@ header {
 }
 .navbar h1 {
   display: flex;
+  width: 100%;
+  justify-content: center;
   font-size: 3.5rem;
   text-decoration: none;
   text-transform: uppercase;
@@ -177,19 +180,14 @@ header {
 }
 @media (max-width: 500px) {
   .navbar h1 {
-    letter-spacing: 2rem;
+    flex-direction: row;
     font-size: 2rem;
+    padding: 0.7rem 0;
   }
 }
 .navbar h1 a {
   color: #AEAEAE;
   text-decoration: none;
-}
-@media (max-width: 500px) {
-  .navbar h1 a {
-    width: 100%;
-    text-align: center;
-  }
 }
 .navbar h1 a:hover {
   color: orange;
@@ -197,38 +195,14 @@ header {
 .navbar nav {
   display: flex;
   justify-content: space-evenly;
-  width: 35rem;
-}
-.navbar nav a {
-  text-decoration: none;
-  margin: 2rem;
-  padding: 1rem;
-  width: 90rem;
-  border: 2px solid orange;
-  border-radius: 5px;
-  text-align: center;
-  font-size: 2.5rem;
-  color: #AEAEAE;
-  flex-wrap: wrap;
-  flex-direction: column;
-}
-@media (max-width: 500px) {
-  .navbar nav a {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin: 0.5rem;
-    padding: 0.7rem;
-    width: 30rem;
-    align-items: center;
-  }
-}
-.navbar nav a:hover {
-  color: #D3D3D3;
+  width: 75%;
+  align-content: center;
 }
 @media (max-width: 500px) {
   .navbar nav {
     flex-direction: column;
     width: 100%;
+    align-items: center;
   }
 }
 .navbar nav #login {
@@ -240,13 +214,40 @@ header {
   border: 2px solid #f09b00;
   color: #D3D3D3;
 }
+.navbar nav a {
+  text-decoration: none;
+  width: 100%;
+  border: 2px solid orange;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 3.5rem;
+  color: #AEAEAE;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 2rem;
+  padding: 2rem;
+}
+@media (max-width: 500px) {
+  .navbar nav a {
+    flex-direction: row;
+    font-size: 2rem;
+    margin: 0.7rem 0;
+    font-weight: bold;
+    padding: 0.7rem 0;
+    width: 100%;
+  }
+}
+.navbar nav a:hover {
+  color: #D3D3D3;
+}
 body {
   background-color: #D3D3D3;
   color: #444444;
 }
 body #mainheader {
   display: flex;
-  width: 80%;
+  width: 90%;
+  margin: 3rem 7rem;
   justify-content: center;
   align-items: center;
   padding: 5rem;
@@ -256,7 +257,7 @@ body #mainheader {
   body #mainheader {
     flex-direction: column;
     width: 100%;
-    padding: 15rem;
+    padding: 5rem 10rem;
     margin: 0;
   }
 }
