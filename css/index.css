@@ -153,20 +153,18 @@ header {
 }
 .navbar {
   display: flex;
-  width: 100%;
+  width: 90%;
   justify-content: space-around;
   align-items: center;
 }
 @media (max-width: 800px) {
   .navbar {
     flex-wrap: wrap;
-    padding: 2%;
   }
 }
 @media (max-width: 500px) {
   .navbar {
     flex-direction: column;
-    flex-wrap: wrap;
     padding: 1rem;
   }
 }
@@ -220,7 +218,7 @@ header {
     font-weight: bold;
     margin: 0.5rem;
     padding: 0.7rem;
-    width: 40rem;
+    width: 30rem;
     align-items: center;
   }
 }
@@ -248,8 +246,7 @@ body {
 }
 body #mainheader {
   display: flex;
-  width: 90%;
-  margin: 3rem 7rem;
+  width: 80%;
   justify-content: center;
   align-items: center;
   padding: 5rem;
