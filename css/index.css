@@ -157,7 +157,7 @@ header {
   justify-content: space-around;
   align-items: center;
 }
-@media (max-width: 750px) {
+@media (max-width: 800px) {
   .navbar {
     flex-wrap: wrap;
     padding: 2%;
@@ -200,23 +200,6 @@ header {
   display: flex;
   justify-content: space-evenly;
   width: 35rem;
-  align-content: center;
-}
-@media (max-width: 500px) {
-  .navbar nav {
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-  }
-}
-.navbar nav #login {
-  background-color: orange;
-  color: #444444;
-}
-.navbar nav #login:hover {
-  background-color: #f09b00;
-  border: 2px solid #f09b00;
-  color: #D3D3D3;
 }
 .navbar nav a {
   text-decoration: none;
@@ -238,9 +221,25 @@ header {
     margin: 0.5rem;
     padding: 0.7rem;
     width: 40rem;
+    align-items: center;
   }
 }
 .navbar nav a:hover {
+  color: #D3D3D3;
+}
+@media (max-width: 500px) {
+  .navbar nav {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+.navbar nav #login {
+  background-color: orange;
+  color: #444444;
+}
+.navbar nav #login:hover {
+  background-color: #f09b00;
+  border: 2px solid #f09b00;
   color: #D3D3D3;
 }
 body {
@@ -253,11 +252,10 @@ body #mainheader {
   margin: 3rem 7rem;
   justify-content: center;
   align-items: center;
-  height: 80vh;
   padding: 5rem 5rem;
   text-align: left;
 }
-@media (max-width: 750px) {
+@media (max-width: 800px) {
   body #mainheader {
     flex-direction: column;
     width: 100%;
@@ -276,7 +274,7 @@ body #mainheader #index {
   flex-direction: column;
   justify-content: space-around;
 }
-@media (max-width: 750px) {
+@media (max-width: 800px) {
   body #mainheader #index {
     width: 90%;
     align-items: center;
@@ -289,7 +287,7 @@ body #mainheader #index h1 {
   font-size: 7rem;
   padding: 3rem 0;
 }
-@media (max-width: 750px) {
+@media (max-width: 800px) {
   body #mainheader #index h1 {
     font-size: 5rem;
   }
@@ -303,7 +301,7 @@ body #mainheader #index h2 {
   padding: 2rem 0;
   font-size: 5rem;
 }
-@media (max-width: 750px) {
+@media (max-width: 800px) {
   body #mainheader #index h2 {
     font-size: 4rem;
   }
@@ -324,7 +322,7 @@ body #mainheader #index p {
   width: 65%;
   text-align: justify;
 }
-@media (max-width: 750px) {
+@media (max-width: 800px) {
   body #mainheader #index p {
     text-align: center;
     justify-content: center;
@@ -336,7 +334,7 @@ body #mainheader #mock {
   display: flex;
   justify-content: space-around;
 }
-@media (max-width: 750px) {
+@media (max-width: 800px) {
   body #mainheader #mock {
     align-items: center;
     width: 100%;
@@ -352,7 +350,7 @@ body #mainheader #mock {
   padding: 2rem;
   font-size: 3.1rem;
 }
-@media (max-width: 750px) {
+@media (max-width: 800px) {
   #about {
     font-size: 2rem;
     padding: 5rem;
@@ -384,7 +382,7 @@ body #mainheader #mock {
   text-align: center;
   width: 100%;
 }
-@media (max-width: 750px) {
+@media (max-width: 800px) {
   #about .container {
     flex-direction: row;
   }
@@ -396,7 +394,7 @@ body #mainheader #mock {
   width: 100%;
   justify-content: space-evenly;
 }
-@media (max-width: 750px) {
+@media (max-width: 800px) {
   #about .container .team {
     flex-direction: row;
     flex-wrap: wrap;
@@ -410,7 +408,7 @@ body #mainheader #mock {
   align-items: center;
   padding: 2rem;
 }
-@media (max-width: 750px) {
+@media (max-width: 800px) {
   #about .container .team .dev {
     flex-direction: row;
     flex-wrap: wrap;
@@ -430,7 +428,7 @@ body #mainheader #mock {
   border-radius: 100px;
   align-content: left;
 }
-@media (max-width: 750px) {
+@media (max-width: 800px) {
   #about .container .team .dev img {
     width: 100px;
     margin: 0.5rem;
@@ -447,7 +445,7 @@ body #mainheader #mock {
   font-size: 2rem;
   padding: 1rem;
 }
-@media (max-width: 750px) {
+@media (max-width: 800px) {
   #about .container .team .dev a {
     padding: 0;
     width: 100%;
