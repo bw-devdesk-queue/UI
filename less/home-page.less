@@ -10,20 +10,20 @@ body {
         margin: 7rem;
         justify-content: center;
         align-items: center;
-        padding: 5rem;
+        .p(5rem);
         text-align: left;
 
 
         @media @tablet {
             flex-direction: column;
-            width: 100%;
-            padding: 2rem;
+            .w();
+            .p(2rem);
             margin: 0;
         }
 
         @media @phone {
-            width: 100%;
-            padding: 1rem;
+            .w();
+            .p(1rem);
         }
 
       
@@ -45,7 +45,7 @@ body {
             h1 {
                 color: @orange;
                 font-size: 7rem;
-                padding: 3rem 0;
+                .p(3rem 0);
 
                 @media @tablet {
                     font-size: 5rem;
@@ -60,7 +60,7 @@ body {
             }
 
             h2 {
-                padding: 2rem 0;
+                .p(2rem 0);
                 font-size: 5rem;
 
                 @media @tablet {
@@ -75,13 +75,13 @@ body {
             mark {
                     background: lighten(@lightgray, 8%);
                     color: @darkgray;
-                    padding: .4rem;
+                    .p(1rem);
                 }
             }
 
             p {
                 font-size: 1.7rem;
-                padding: 1rem 0;
+                .p(1rem 0);
                 width: 65%;
                 text-align: justify;
 
@@ -89,7 +89,7 @@ body {
                     text-align: center;
                     justify-content: center;
                     width: 80%;
-                    padding: .5rem;
+                    .p(.5rem);
                 }
             }  
 
@@ -103,8 +103,8 @@ body {
 
             @media @tablet {
                 align-items: center;
-                width: 100%;
-                padding: 4rem;
+                .w();
+                .p(4rem);
             }
         }
     }

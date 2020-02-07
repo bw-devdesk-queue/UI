@@ -1,31 +1,24 @@
 header {
-    display: flex;
-    justify-content: center;
+    .flex(center,100%);
+    .p(0 2rem);
     background: @darkgray;
-    padding: 0 2rem;
-    width: 100%;
-
 
     .navbar {
-        // border: solid green;
-        width: 100%;
-        display: flex;
-        padding: 2rem 5rem;
+        .flex(space-evenly, 100%);
+        .p(2rem 5rem);
         align-items: center;
-        justify-content: space-evenly;
 
         @media @tablet {
-            flex-wrap: wrap;
-            padding: 2rem;
+            .p(2rem);
+            flex-wrap: wrap;           
         }
     
         @media @phone {
-            flex-direction: column;
-            padding: 1rem;    
+            .p(1rem); 
+            flex-direction: column;            
         }
 
         h1 {
-        //     border: solid yellow;
             width: 50%;
             font-size: 3rem;
             text-decoration: none;
@@ -33,12 +26,9 @@ header {
             letter-spacing: 2rem;
             justify-content: space-around;
 
-
-
-
             @media @tablet {
-                width: 100%;
-                padding: 1rem 0;
+                .w();
+                .p(1rem 0);
                 text-align: center;
                 letter-spacing: 2rem;
                 font-size: 2.5rem;
@@ -58,32 +48,28 @@ header {
                 }
 
                 @media @phone {
-                    width: 100%;
+                    .w();
                 }
 
             }
         }
         
         nav {
-            display: flex;
-            // border: solid red;
-            width: 55%;
-            justify-content: space-evenly;
+            .flex(space-evenly, 55%);
             
-            
-
             @media @tablet {
-                width: 100%;
-                padding: 1rem 0;
+                .w();
+                .p(1rem 0);
             }
 
             @media @phone {
                 flex-direction: column;
-                width: 100%;
+                .w();
                 align-items: center;
             }
 
             a{
+                .p(1.5rem);
                 text-decoration: none;
                 width:35%;
                 border: 2px solid @orange;
@@ -91,9 +77,7 @@ header {
                 text-align: center;
                 font-size: 2rem;
                 color: @lightgray;
-                padding: 1.5rem;
                 margin: 0 2rem;
-        
 
                 &:hover {
                     color: @white;
@@ -106,15 +90,14 @@ header {
                 }
     
                 @media @phone {
-                    width: 100%;
+                    .w();
+                    .p(1.7rem);
                     font-size: 2rem;
                     margin: .5rem 0;
-                    padding: .7rem;
                     font-weight: bold;
                 }
             }
-            
-
+        
             #login {
                 background-color:@orange;
                 color: @darkgray;
@@ -122,8 +105,7 @@ header {
                 &:hover {
                     background-color: darken(@orange, 3%);
                     border: 2px solid darken(@orange, 3%);
-                    color: @white;
-                    
+                    color: @white;    
                 }
             }
         }

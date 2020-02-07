@@ -1,3 +1,23 @@
 .font(){
     font-family: 'Overpass', sans-serif;
 }
+
+.flex(@j, @w){
+    display: flex;
+    justify-content: @j;
+    width: @w;
+}
+
+.p(@p) {
+    padding: @p;
+}
+
+.flexwrap(@d, @w) {
+    flex-direction: @d;
+    flex-wrap: @w;
+}
+
+.w(){
+    width: 100%;
+}
+
