@@ -1,13 +1,18 @@
 header {
+    display: flex;
+    justify-content: center;
     background: @darkgray;
     padding: 0 2rem;
     width: 100%;
 
+
     .navbar {
+        // border: solid green;
+        width: 100%;
         display: flex;
-        padding: 1rem;
+        padding: 2rem 5rem;
         align-items: center;
-        justify-content: center;
+        justify-content: space-evenly;
 
         @media @tablet {
             flex-wrap: wrap;
@@ -20,17 +25,20 @@ header {
         }
 
         h1 {
+        //     border: solid yellow;
             width: 50%;
             font-size: 3rem;
             text-decoration: none;
             text-transform: uppercase;
             letter-spacing: 2rem;
-            padding: 1rem;
-            
-            // border: solid yellow;
+            justify-content: space-around;
+
+
+
 
             @media @tablet {
                 width: 100%;
+                padding: 1rem 0;
                 text-align: center;
                 letter-spacing: 2rem;
                 font-size: 2.5rem;
@@ -58,12 +66,15 @@ header {
         
         nav {
             display: flex;
-            justify-content: space-around;
-            width: 50%;
-            align-content: center;
+            // border: solid red;
+            width: 55%;
+            justify-content: space-evenly;
+            
+            
 
             @media @tablet {
                 width: 100%;
+                padding: 1rem 0;
             }
 
             @media @phone {
@@ -74,21 +85,22 @@ header {
 
             a{
                 text-decoration: none;
-                width: 40%;
+                width:35%;
                 border: 2px solid @orange;
                 border-radius: 5px;
                 text-align: center;
-                font-size: 2.2rem;
+                font-size: 2rem;
                 color: @lightgray;
-                flex-direction: column;
+                padding: 1.5rem;
                 margin: 0 2rem;
-                padding: 2rem;
+        
 
                 &:hover {
                     color: @white;
                 } 
 
                 @media @tablet {
+                    margin: 0 2rem;
                     width: 60%;
                     flex-direction: row;
                 }
@@ -96,8 +108,8 @@ header {
                 @media @phone {
                     width: 100%;
                     font-size: 2rem;
-                    margin: .7rem 0;
-                    padding: .5rem;
+                    margin: .5rem 0;
+                    padding: .7rem;
                     font-weight: bold;
                 }
             }
