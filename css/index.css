@@ -150,94 +150,115 @@ h3 {
 header {
   background: #444444;
   padding: 0 2rem;
-}
-.navbar {
-  display: flex;
   width: 100%;
+}
+header .navbar {
+  display: flex;
+  padding: 1rem;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
 }
 @media (max-width: 800px) {
-  .navbar {
+  header .navbar {
     flex-wrap: wrap;
     padding: 2rem;
   }
 }
 @media (max-width: 500px) {
-  .navbar {
+  header .navbar {
     flex-direction: column;
     padding: 1rem;
   }
 }
-.navbar h1 {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  font-size: 3.5rem;
+header .navbar h1 {
+  width: 50%;
+  font-size: 3rem;
   text-decoration: none;
   text-transform: uppercase;
-  letter-spacing: 1rem;
+  letter-spacing: 2rem;
+  padding: 1rem;
 }
-@media (max-width: 500px) {
-  .navbar h1 {
-    flex-direction: row;
-    font-size: 2rem;
-    padding: 0.7rem 0;
+@media (max-width: 800px) {
+  header .navbar h1 {
+    width: 100%;
+    text-align: center;
+    letter-spacing: 2rem;
+    font-size: 2.5rem;
   }
 }
-.navbar h1 a {
+@media (max-width: 500px) {
+  header .navbar h1 {
+    letter-spacing: 1.5rem;
+    font-size: 2rem;
+  }
+}
+header .navbar h1 a {
   color: #AEAEAE;
   text-decoration: none;
 }
-.navbar h1 a:hover {
+header .navbar h1 a:hover {
   color: orange;
 }
-.navbar nav {
+@media (max-width: 500px) {
+  header .navbar h1 a {
+    width: 100%;
+  }
+}
+header .navbar nav {
   display: flex;
-  justify-content: space-evenly;
-  width: 75%;
+  justify-content: space-around;
+  width: 50%;
   align-content: center;
 }
+@media (max-width: 800px) {
+  header .navbar nav {
+    width: 100%;
+  }
+}
 @media (max-width: 500px) {
-  .navbar nav {
+  header .navbar nav {
     flex-direction: column;
     width: 100%;
     align-items: center;
   }
 }
-.navbar nav #login {
-  background-color: orange;
-  color: #444444;
-}
-.navbar nav #login:hover {
-  background-color: #f09b00;
-  border: 2px solid #f09b00;
-  color: #D3D3D3;
-}
-.navbar nav a {
+header .navbar nav a {
   text-decoration: none;
-  width: 100%;
+  width: 40%;
   border: 2px solid orange;
   border-radius: 5px;
   text-align: center;
-  font-size: 3.5rem;
+  font-size: 2.2rem;
   color: #AEAEAE;
-  flex-wrap: wrap;
   flex-direction: column;
-  margin: 2rem;
+  margin: 0 2rem;
   padding: 2rem;
 }
-@media (max-width: 500px) {
-  .navbar nav a {
+header .navbar nav a:hover {
+  color: #D3D3D3;
+}
+@media (max-width: 800px) {
+  header .navbar nav a {
+    width: 60%;
     flex-direction: row;
-    font-size: 2rem;
-    margin: 0.7rem 0;
-    font-weight: bold;
-    padding: 0.7rem 0;
-    width: 100%;
   }
 }
-.navbar nav a:hover {
+@media (max-width: 500px) {
+  header .navbar nav a {
+    width: 100%;
+    font-size: 2rem;
+    margin: 0.7rem 0;
+    padding: 0.5rem;
+    font-weight: bold;
+  }
+}
+header .navbar nav #login {
+  background-color: orange;
+  color: #444444;
+}
+header .navbar nav #login:hover {
+  background-color: #f09b00;
+  border: 2px solid #f09b00;
   color: #D3D3D3;
 }
 body {

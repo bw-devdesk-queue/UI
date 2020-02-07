@@ -1,13 +1,13 @@
 header {
     background: @darkgray;
     padding: 0 2rem;
-}
+    width: 100%;
+
     .navbar {
-       
         display: flex;
-        width: 100%;
+        padding: 1rem;
         align-items: center;
-        justify-content: space-around;
+        justify-content: center;
 
         @media @tablet {
             flex-wrap: wrap;
@@ -20,44 +20,88 @@ header {
         }
 
         h1 {
-            display: flex;
-            width: 100%;
-            justify-content: center;
-            font-size: 3.5rem;
+            width: 50%;
+            font-size: 3rem;
             text-decoration: none;
             text-transform: uppercase;
-            letter-spacing: 1rem;
+            letter-spacing: 2rem;
+            padding: 1rem;
+            
+            // border: solid yellow;
+
+            @media @tablet {
+                width: 100%;
+                text-align: center;
+                letter-spacing: 2rem;
+                font-size: 2.5rem;
+            }
 
             @media @phone {
-                flex-direction: row;
+                letter-spacing: 1.5rem;
                 font-size: 2rem;
-                padding: .7rem 0;
             }
 
             a {
                 color: @lightgray;
                 text-decoration: none;
+
                 &:hover {
                     color: @orange;
                 }
-            
+
+                @media @phone {
+                    width: 100%;
+                }
 
             }
         }
         
         nav {
             display: flex;
-            justify-content: space-evenly;
-            width: 75%;
+            justify-content: space-around;
+            width: 50%;
             align-content: center;
 
-            
+            @media @tablet {
+                width: 100%;
+            }
+
             @media @phone {
                 flex-direction: column;
                 width: 100%;
                 align-items: center;
             }
 
+            a{
+                text-decoration: none;
+                width: 40%;
+                border: 2px solid @orange;
+                border-radius: 5px;
+                text-align: center;
+                font-size: 2.2rem;
+                color: @lightgray;
+                flex-direction: column;
+                margin: 0 2rem;
+                padding: 2rem;
+
+                &:hover {
+                    color: @white;
+                } 
+
+                @media @tablet {
+                    width: 60%;
+                    flex-direction: row;
+                }
+    
+                @media @phone {
+                    width: 100%;
+                    font-size: 2rem;
+                    margin: .7rem 0;
+                    padding: .5rem;
+                    font-weight: bold;
+                }
+            }
+            
 
             #login {
                 background-color:@orange;
@@ -70,32 +114,6 @@ header {
                     
                 }
             }
-           
-            a{
-                text-decoration: none;
-                width: 100%;
-                border: 2px solid @orange;
-                border-radius: 5px;
-                text-align: center;
-                font-size: 3.5rem;
-                color: @lightgray;
-                flex-wrap: wrap;
-                flex-direction: column;
-                margin: 2rem;
-                padding: 2rem;
-    
-                @media @phone {
-                    flex-direction: row;
-                    font-size: 2rem;
-                    margin: .7rem 0;
-                    font-weight: bold;
-                    padding: .7rem 0;
-                    width: 100%;
-                }
-
-                &:hover {
-                    color: @white;
-                } 
-            }
         }
     }
+}
