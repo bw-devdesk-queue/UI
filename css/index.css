@@ -419,6 +419,9 @@ body #mainheader #mock {
     align-content: center;
   }
 }
+#about .container .team .dev .info {
+  width: 70%;
+}
 #about .container .team .dev img {
   flex-wrap: wrap;
   flex-direction: column;
