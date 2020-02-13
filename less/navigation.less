@@ -1,0 +1,113 @@
+header {
+    .flex(center,100%);
+    .p(0 2rem);
+    background: @darkgray;
+
+    .navbar {
+        .flex(space-evenly, 100%);
+        .p(2rem 5rem);
+        align-items: center;
+
+        @media @tablet {
+            .p(2rem);
+            flex-wrap: wrap;           
+        }
+    
+        @media @phone {
+            .p(1rem); 
+            flex-direction: column;            
+        }
+
+        h1 {
+            width: 50%;
+            font-size: 3rem;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 2rem;
+            justify-content: space-around;
+
+            @media @tablet {
+                .w();
+                .p(1rem 0);
+                text-align: center;
+                letter-spacing: 2rem;
+                font-size: 2.5rem;
+            }
+
+            @media @phone {
+                letter-spacing: 1.5rem;
+                font-size: 2rem;
+            }
+
+            a {
+                color: @lightgray;
+                text-decoration: none;
+
+                &:hover {
+                    color: @orange;
+                }
+
+                @media @phone {
+                    .w();
+                }
+
+            }
+        }
+        
+        nav {
+            .flex(space-evenly, 55%);
+            
+            @media @tablet {
+                .w();
+                .p(1rem 0);
+            }
+
+            @media @phone {
+                flex-direction: column;
+                .w();
+                align-items: center;
+            }
+
+            a{
+                .p(1.5rem);
+                text-decoration: none;
+                width:35%;
+                border: 2px solid @orange;
+                border-radius: 5px;
+                text-align: center;
+                font-size: 2rem;
+                color: @lightgray;
+                margin: 0 2rem;
+
+                &:hover {
+                    color: @white;
+                } 
+
+                @media @tablet {
+                    margin: 0 2rem;
+                    width: 60%;
+                    flex-direction: row;
+                }
+    
+                @media @phone {
+                    .w();
+                    .p(1.7rem);
+                    font-size: 2rem;
+                    margin: .5rem 0;
+                    font-weight: bold;
+                }
+            }
+        
+            #login {
+                background-color:@orange;
+                color: @darkgray;
+
+                &:hover {
+                    background-color: darken(@orange, 3%);
+                    border: 2px solid darken(@orange, 3%);
+                    color: @white;    
+                }
+            }
+        }
+    }
+}
